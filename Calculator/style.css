@@ -1,0 +1,99 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:hsl(0, 0%, 0%)
+}
+@keyframes glowAnimation {
+    0% {
+        box-shadow: 0 0 15px rgb(219, 27, 162);
+    }
+    50% {
+        box-shadow: 0 0 25px rgb(203, 87, 238);
+    }
+    100% {
+        box-shadow: 0 0 15px rgb(240, 9, 190);
+    }
+}
+
+.calculator {
+    width: 310px;
+    height:500px;
+    padding: 20px;
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(247, 2, 214);
+    margin: 50px auto;
+    animation: glowAnimation 1.0s infinite alternate ease-in-out;
+    position:fixed;
+}
+@keyframes glowAnimation {
+    0% {
+        box-shadow: 0 0 15px rgb(219, 27, 162);
+    }
+    50% {
+        box-shadow: 0 0 25px rgb(203, 87, 238);
+    }
+    100% {
+        box-shadow: 0 0 15px rgb(240, 9, 190);
+    }
+}
+
+#display {
+    width: 94%;
+    height: 50px;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    background: #000000;
+    padding: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(247, 2, 214);
+    animation: glowAnimation 1.0s infinite alternate ease-in-out;
+}
+
+.buttons {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:#f15acc;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #444;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #666;
+}
+button:nth-child(1) { background: #f15acc; } 
+button:nth-child(1):hover { background:#f1a1dd; }
+button:nth-child(2) { background: #f15acc; } 
+button:nth-child(2):hover { background:#f1a1dd; }
+button:nth-child(3) { background: #f15acc; } 
+button:nth-child(3):hover { background:#f1a1dd; }
+button:nth-child(4) { background: #c27de2; } 
+button:nth-child(4):hover { background: #e3b7f8; }
+button:nth-child(8) { background: #c27de2; } 
+button:nth-child(8):hover { background: #e3b7f8; }
+button:nth-child(12) { background: #c27de2; } 
+button:nth-child(12):hover { background: #e3b7f8; }
+button:nth-child(16) { background: #c27de2; } 
+button:nth-child(16):hover { background:#e3b7f8; }
+button:nth-child(19) { background: #f15acc; } 
+button:nth-child(19):hover { background:#f1a1dd; }
+button:nth-child(20) { background: #c27de2; } 
+button:nth-child(20):hover { background:#e3b7f8; }
